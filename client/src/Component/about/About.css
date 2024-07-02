@@ -1,0 +1,34 @@
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 110vh;
+  }
+  .h1{
+    justify-content: center;
+    display: flex;
+    border-bottom: 1px solid #B93A1C;
+  }
+  .about-content {
+    max-width: 800px; 
+    width: 100%;
+  }
+
+  .about-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .about-content p {
+    margin-bottom: 15px;
+  }
+  
+  .about-content ul {
+    margin-bottom: 15px;
+  }
+  
+  .about-content ul li {
+    margin-bottom: 5px;
+  }
+  

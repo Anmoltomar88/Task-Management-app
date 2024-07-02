@@ -1,0 +1,44 @@
+.rotating {
+    animation: rotateAnimation 1s linear infinite;
+  }
+  
+  @keyframes rotateAnimation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.user-png{
+    height:28px;
+    width:35px;
+}
+
+.vite-icon {
+    width: 30px; 
+    height: auto;
+    margin-right: 10px; 
+  }
+.navbar-brand{
+    background-color:#Ec583a;
+    color: white;
+    border-radius: 5px;
+    padding:5px 5px 5px 5px;
+}
+
+.btn-nav {
+    background-color: #Ec583a;
+    border-radius: 5px;
+    color: white !important;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    transform: translateZ(0);
+}
+
+.btn-nav:hover {
+    background-color: #0DA7C5;
+    transform: translate(0, -3px);
+}
+
