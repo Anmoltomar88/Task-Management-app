@@ -13,14 +13,15 @@
 
 .user-png{
     height:28px;
-    width:35px;
+    width:30px;
 }
 
 .vite-icon {
-    width: 30px; 
+    width: 30px;  
     height: auto;
     margin-right: 10px; 
   }
+
 .navbar-brand{
     background-color:#Ec583a;
     color: white;

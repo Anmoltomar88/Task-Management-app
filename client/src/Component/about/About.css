@@ -1,34 +1,48 @@
 .about-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    height: 110vh;
-  }
-  .h1{
-    justify-content: center;
-    display: flex;
-    border-bottom: 1px solid #B93A1C;
-  }
-  .about-content {
-    max-width: 800px; 
-    width: 100%;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 84.6vh; /* Ensure the container takes at least full viewport height */
+  box-sizing: border-box;
+}
 
-  .about-content h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .about-content p {
-    margin-bottom: 15px;
-  }
-  
-  .about-content ul {
-    margin-bottom: 15px;
-  }
-  
-  .about-content ul li {
-    margin-bottom: 5px;
-  }
-  
+.h1 {
+  justify-content: center;
+  display: flex;
+  border-bottom: 1px solid #B93A1C;
+}
+
+.about-content {
+  max-width: 800px;
+  width: 100%;
+  flex: 1;/* Allow the content to grow and fill the space */
+}
+
+.about-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about-content p {
+  margin-bottom: 15px;
+}
+
+.about-content ul {
+  margin-bottom: 15px;
+}
+
+.about-content ul li {
+  margin-bottom: 5px;
+  list-style-type: none;
+}
+
+.about-content ul li {
+  font-style: italic;
+}
+
+.about-content ul li strong {
+  font-style: normal;
+  font-weight: bold;
+}
