@@ -41,12 +41,12 @@ const Tasks = () => {
           }
         );
         setTaskArray([...TaskArray, Inputs]);
-        toast.success("Your task is added 😁😁");
+        toast.success("Your task is added");
         setInputs({ title: "", body: "" });
       } else {
         setTaskArray([...TaskArray, Inputs]);
-        toast.success("Your task is added 😁😁");
-        toast.error("Your Task is not saved !!! please SignUP😅😅");
+        toast.success("Your task is added");
+        toast.error("Your Task is not saved !!! please SignUp");
         setInputs({ title: "", body: "" });
       }
     }

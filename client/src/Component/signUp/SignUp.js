@@ -94,13 +94,6 @@ const SignUp = () => {
                     </div>
 
                     <div className="column col-left col-lg-5 d-flex justify-content-center align-items-center flex-column">
-                        <img
-                            src="/signpost.svg"
-                            alt="Vite Icon"
-                            className={`passport-photo ${isRotating ? "rotating" : ""}`}
-                            onLoad={() => setIsRotating(true)}
-                            onError={() => setIsRotating(false)}
-                        />
                         <h1 className="text-center heading">
                             SIGN UP
                         </h1>

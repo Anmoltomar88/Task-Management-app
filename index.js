@@ -21,12 +21,11 @@ app.use(cors());
 app.use("/", userRouter);
 app.use("/", listRouter);
 
-// Simulate __dirname for ES modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 app.use(express.static(path.resolve(__dirname, "client", "build")));
 
-// The "catchall" handler: for any request that doesn't match one above, send back the React's index.html file.
+
 app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
 });

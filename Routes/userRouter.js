@@ -7,4 +7,4 @@ userRouter.post("/register",SignUp)
 userRouter.post("/login",SignIn)
 
 
-export default userRouter;
+export default userRouter; 

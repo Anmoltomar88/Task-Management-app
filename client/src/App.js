@@ -6,7 +6,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import NavBar from './Component/navBar/NavBar';
 import Home from './Component/home/Home';
 import Footer from './Component/footer/Footer';
-import About from './Component/about/About';
 import SignUp from './Component/signUp/SignUp';
 import SignIn from './Component/signIn/SignIn';
 import Tasks from './Component/tasks/Tasks';
@@ -29,10 +28,9 @@ function App() {
     <>
       <BrowserRouter>
         <NavBar />
-        <ToastContainer /> {/* Place the ToastContainer at the root level */}
+        <ToastContainer />
         <Routes>
-          <Route exact path='/' element={<Home />} /> {/* slash / make it the initial page */}
-          <Route  path='/about' element={<About />} />
+          <Route exact path='/' element={<Home />} />
           <Route  path='/tasks' element={<Tasks />} />
           <Route  path='/signUp' element={<SignUp />} />
           <Route  path='/signIn' element={<SignIn />} />

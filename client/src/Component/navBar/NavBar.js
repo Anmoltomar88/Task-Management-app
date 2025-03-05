@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
-//redux
+
 import { useSelector } from "react-redux"; //to handle state from the store
 import { authActions } from "../../Store";  //to handle actions from the slice
 import { useDispatch } from "react-redux";  //to call the action
@@ -13,13 +13,6 @@ function NavBar() {
 
   const dispatch =useDispatch();
 
-  const handleClick = () => {
-    setIsLogoRotating(true);
-    setTimeout(() => {
-      setIsLogoRotating(false);
-    }, 1000);
-  };
-
   const logout =()=>{
     console.log("logout called");
     sessionStorage.removeItem("id")
@@ -29,7 +22,7 @@ function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container">
-        <Link className="navbar-brand" to="#" onClick={handleClick}>
+        <Link className="navbar-brand" to="#">
           <b>
             <img
               src="/vite.svg"
@@ -55,11 +48,6 @@ function NavBar() {
             <li className="nav-item mx-2">
               <Link className="nav-link active  btn-nav" aria-current="page" to="/">
                 Home
-              </Link>
-            </li>
-            <li className="nav-item mx-2">
-              <Link className="nav-link active  btn-nav" aria-current="page" to="/about">
-                About Us
               </Link>
             </li>
             <li className="nav-item mx-2">

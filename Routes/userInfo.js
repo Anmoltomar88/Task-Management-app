@@ -31,7 +31,7 @@ const SignIn = async (req, res) => {
         
     } catch (error) {
         res.status(500).json({ message: "User not found. Please sign up first." });
-    }
+    } 
 }
 
 

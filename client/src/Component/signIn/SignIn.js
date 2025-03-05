@@ -57,21 +57,6 @@ const SignIn = () => {
         <div className="container signup">
             <div className="container">
                 <div className="row my-2">
-                    <div className="column col-left col-lg-5 d-flex justify-content-center align-items-center flex-column">
-                        <img
-                            src="/right-direction.svg"
-                            alt="Vite Icon"
-                            className={`passport-photo ${isRotating ? "rotating" : ""}`}
-                            onLoad={handleClick}
-                            style={styles}
-                        />
-                        <div>
-                          <h1 className="text-center heading">
-                            SIGN IN
-                        </h1>  
-                        </div>
-                        
-                    </div>
                     <div className="column ccccc col-lg-7 d-flex justify-content-center align-items-center ">
                         <div className='container d-flex flex-column  '>
                             <label htmlFor="email">Email</label>
@@ -96,6 +81,14 @@ const SignIn = () => {
                             />
                             <button className='Signup-btn' onClick={(e)=>handleSubmit(e)}>SignIn</button>
                         </div>
+                    </div>
+                    <div className="column col-left col-lg-5 d-flex justify-content-center align-items-center flex-column">
+                        <div>
+                          <h1 className="text-center heading">
+                            SIGN IN
+                        </h1>  
+                        </div>
+                        
                     </div>
                 </div>
             </div>
